@@ -1,0 +1,19 @@
+{
+  "name": "surplus_deficit_balancer",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "AP",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/office-js": "^1.0.593",
+    "express": "^5.2.1",
+    "office-addin-dev-certs": "^2.0.9"
+  }
+}

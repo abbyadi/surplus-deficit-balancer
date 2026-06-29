@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>Surplus Deficit Balancer</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css"/>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="ms-font-m ms-welcome ms-Fabric">
+
+    <h3>Surplus Shortfall Adjuster</h3>
+
+    <input id="range-name" type="text" placeholder="Named Range" value="RngDevCosts" style="width: 250px"><br>
+    <input id="line-item-name" type="text" placeholder="Line Item Name" list="budget-line-list" style="width: 250px">
+    <datalist id="budget-line-list">
+        <option value="Contingency Escalation">
+        <option value="Contingency Design Estimating">
+        <option value="Contingency Owners Construction">
+        <option value="Soft Cost Contingency">
+        <option value="Hard Costs Unit Construction">
+    </datalist>
+    <br>
+    <div>
+        <button id="run" class="ms-Button">
+            <span class="ms-Button-label">Adjust Hard Cost</span>
+        </button>
+    </div>
+    <hr>
+
+    <input class="ss-input" id="soft-debt-name" type="text" placeholder="HCD NPLH" style="width: 250px"><br>
+    <div>
+        <button id="soft-debt" class="ms-Button">
+            <span class="ms-Button-label">Adjust Soft Source</span>
+        </button>
+    </div>
+    <hr>
+
+    <div>
+        <button id="Max-Fed-Credits" class="ms-Button">
+            <span class="ms-Button-label">Max 9% Credits</span>
+        </button>
+    </div>
+    <hr>
+
+    <div>
+        <button id="Fed-Credit-Adjuster" class="ms-Button">
+            <span class="ms-Button-label">Adjust 9% Credits</span>
+        </button>
+    </div>
+    <hr>
+
+    <div>
+        <button id="State-Credit-Adjuster" class="ms-Button">
+            <span class="ms-Button-label">Adjust State Credits</span>
+        </button>
+    </div>
+    <hr>
+
+    <div>
+        <button id="defer-fee" class="ms-Button">
+            <span class="ms-Button-label">Defer Developer Fee</span>
+        </button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

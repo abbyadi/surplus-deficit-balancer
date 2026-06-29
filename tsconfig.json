@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES2019", "DOM"],
+    "module": "none",
+    "ignoreDeprecations": "6.0",
+    "strict": true,
+    "noImplicitAny": false,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["office-js"]
+  },
+  "files": ["index.ts"]
+}
